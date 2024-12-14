@@ -1,0 +1,61 @@
+.leftBar {
+    padding: 10px;
+    width: 15%;
+    height:  600px;
+    border-radius: 5px;
+    background-color:  #30313164;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    width: 15px;
+    height: 100%;
+}
+
+.header h3 {
+    margin: 0;
+}
+
+.break {
+    background-color: rgb(220, 210, 210);
+    border-radius: 10px;
+    margin: 7px 0 7px 0;
+    height: 0.5px;
+
+}
+
+.taskCategory {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */ 
+
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+.category img {
+    margin-right: 5px;
+    width: 20px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.category h5 {
+    margin: 0;
+}
+
+.category:hover {
+    background-color: #3031311e;
+}
+/* background-color: #242424; */

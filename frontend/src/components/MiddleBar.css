@@ -1,0 +1,24 @@
+.middleBar {
+    width: 55%;
+    padding: 0 20px 0 20px;
+    height:  600px;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+.none {
+    height: 100%;
+    margin: auto 10px;    
+    text-align: center;
+}
+
+.middleBar::-webkit-scrollbar {
+    display: none;
+}
+
+.middleBar h1 {
+    margin: 0;
+    margin-bottom: 30px;
+    position: sticky;
+    overflow-y: hidden;
+}

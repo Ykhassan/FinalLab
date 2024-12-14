@@ -1,0 +1,15 @@
+/* If i removed the color, there is a really annoying top and bottm space, that can't be removed setting the body pading or margin to zero: Its because the html besides the body has a padding, margin set */ 
+/* the height of the app.css I tried to set it as the parent element/root however it didnt work */
+
+* {
+  font-family: 'Inter';
+  color: #aa9d9d
+}
+
+html, body {
+  margin: 0;    /* Remove default margin */
+  padding: 0;   /* Remove default padding */
+  overflow: hidden;  /* Disable scrolling, because they are flowing ivwe*/
+  background-color: #242424;
+
+}

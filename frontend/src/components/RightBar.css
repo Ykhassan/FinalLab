@@ -1,0 +1,48 @@
+.rightBar {
+    padding: 10px;
+    width: 30%;
+    height:  600px;
+    border-radius: 5px;
+    background-color:  #30313164;
+}
+
+.rightBar .taskDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.rightBar .taskDetails > input,  .rightBar .taskDetails > textarea {
+    width: 90%;
+    outline: none;
+    background-color: #30313164;
+    border: 1px  rgb(220, 210, 210) solid;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.rightBar .taskDetails > textarea {
+    height: 100px;
+}
+
+
+.date {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date input {
+    width: 110px;
+    outline: none;
+    background-color: #30313164;
+    border: 1px  rgb(220, 210, 210) solid;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+

@@ -1,0 +1,40 @@
+/* Style for the overall task container */
+.task {
+    border-bottom: 1px solid rgb(220, 210, 210);
+    padding: 10px;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for the task name */
+.task h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Container for task details (date, status, and icon) */
+.taskValues {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+/* Style for the task date and status text */
+.taskValues span {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Style for the task completion text */
+.taskValues span:last-child {
+    font-weight: bold;
+}
+
+/* Style for the icon image */
+.taskValues img {
+    width: 20px;
+    height: 20px;
+}

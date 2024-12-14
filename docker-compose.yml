@@ -1,0 +1,31 @@
+# PHP has two config templates files production, development
+# you copy them to a new php.ini file based on the current state of the project make sure the file is .ini extension and not txt
+# in these files you state the extensions you need 
+# by default PHP will look for the php.ini in the installation dir allowing you to run php anywhere with the same configs, however we can add configs ate the root dir
+# use the command php --init to check the path where the PHP.ini file is
+# for containrized env if PHP is locally and DB is containrized access the DB through the localhost
+# make sure the DB is mapped to access the container from outside
+# make sure all services are on the same netweork with bridge being used to access from loacl to container machine
+
+services:
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+    ports:
+      - ${LOCAL_MACHINE_PORT}:3306  # Exposes the database to the host machine
+    networks:
+      - mynetwork  # Ensures the db service is connected to the same network
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - ${ADMINER_PORT}:8080  # Exposes Adminer to the host at port 9090
+    networks:
+      - mynetwork  # Ensures Adminer is on the same network as the db
+
+networks:
+  mynetwork:
+    driver: bridge  # Use bridge networking for container communication
